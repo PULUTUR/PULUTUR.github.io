@@ -1,0 +1,338 @@
+/* PC Mode */
+@media (min-width: 1281px) {
+  body {
+    background-color: red;
+  }
+  
+  /* Hide Hamburger Icon */
+  #hamburger{display: none;}
+  #hamnav label{
+	  display: none;
+  }
+  
+  	nav > ul{
+		list-style-type: none;
+		background-color: #00AEFF;
+	}
+	nav > ul > li{
+		display: inline;
+	}
+	
+	.articleGrid{
+		display: grid;
+		grid-template-areas:
+			"article2 article1 article3"
+			"article5 article1 article4"
+			"article5 article6 article6"
+			"product1 product2 product3"
+	}
+	
+	.article1{
+		background-color: #E3F7A9;
+		grid-area: article1;
+	}
+	
+	.article2{
+		background-color: #D3E7A9;
+		grid-area: article2;
+	}
+	
+	.article3{
+		background-color: #E3F7D9;
+		grid-area: article3;
+	}
+	
+	.article4{
+		background-color: #D3C7B9;
+		grid-area: article4;
+	}
+	
+	.article5{
+		background-color: #E6E8A2;
+		grid-area: article5;
+	}
+	
+	.article6{
+		background-color: #A3A3A9;
+		grid-area: article6;
+	}
+	
+	.asideGrid{
+		display: grid;
+		grid-template-areas:
+			"product1 product2 product3"
+	}
+	
+	.product1{
+		grid-area: product1;
+	}
+	
+	.product2{
+		grid-area: product2;
+	}
+	
+	.product3{
+		grid-area: product3;
+	}
+	
+	.footerGrid{
+		display: grid;
+		grid-template-areas:
+			"footer footer cookie"
+	}
+	
+	.cookie{
+		background-color: #FA0;
+		opacity: 50%;
+		position: fixed;
+		top: 92%;
+		left: 70%;
+		width: 500px;
+		grid-area: cookie;
+	}
+	
+	.cookie > p{
+		color: #FFF;
+	}
+	
+	.footer{
+		background-color: #E6E8A2;
+		grid-area: footer;
+	}
+}
+
+/* Tablet Mode */
+@media (min-width: 481px) and (max-width: 1280px) {
+  body {
+    background-color: green;
+  }
+  
+  /* Hide Hamburger Icon */
+  #hamburger{display: none;}
+  #hamnav label{
+	  display: none;
+  }
+  
+  	nav > ul{
+		list-style-type: none;
+		background-color: #00AEFF;
+	}
+	nav > ul > li{
+		display: inline;
+	}
+	
+	.articleGrid{
+		display: grid;
+		grid-template-areas:
+			"article1 article2"
+			"article3 article2"
+			"article3 article5"
+			"article6 article6"
+	}
+	
+	.article1{
+		background-color: #E3F7A9;
+		grid-area: article1;
+	}
+	
+	.article2{
+		background-color: #D3E7A9;
+		grid-area: article2;
+	}
+	
+	.article3{
+		background-color: #E3F7D9;
+		grid-area: article3;
+	}
+	
+	.article4{
+		display: none;
+	}
+	
+	.article5{
+		background-color: #E6E8A2;
+		grid-area: article5;
+	}
+	
+	.article6{
+		background-color: #A3A3A9;
+		grid-area: article6;
+	}
+	
+	.asideGrid{
+		display: grid;
+		grid-template-areas:
+			"product1 product2"
+	}
+	
+	.product1{
+		grid-area: product1;
+	}
+	
+	.product2{
+		grid-area: product2;
+	}
+	
+	.product3{
+		display: none;
+	}
+	
+	.footerGrid{
+		display: grid;
+		grid-template-areas:
+			"footer footer cookie"
+	}
+	
+	.cookie{
+		background-color: #FA0;
+		opacity: 50%;
+		position: fixed;
+		top: 92%;
+		left: 70%;
+		width: 500px;
+		grid-area: cookie;
+	}
+	
+	.cookie > p{
+		color: #FFF;
+	}
+	
+	.footer{
+		background-color: #E6E8A2;
+		grid-area: footer;
+	}
+}
+
+/* Phone Mode */
+@media (max-width: 480px) {
+  body {
+    background-color: blue;
+  }
+  
+  /*---- HAMBURGER MENU ----*/
+  #hamburger{display: none;}
+  #hamitems{display: block;}
+  #hamitems a {
+	  display: block;
+	  width: 100%;
+	  box-sizing: border-box;
+	  border-top: 1px solid #333;
+  }
+  
+  /* Show Hamburger Icon */
+  #hamnav label{
+	  display: inline-block;
+  }
+  
+  /* Hide Menu Items By Default */
+  #hamitems{display: none;}
+  
+  /* Toggle Show/Hide */
+  #hamnav input:checked ~ #hamitems{display:block;}
+  /*---- END HAMBURGER MENU ----*/
+  
+	.websiteLogo{
+		display: none;
+	}
+	
+	.headerGrid{
+		display: grid;
+		grid-template-areas:
+			"title nav"
+			"payoff nav"
+	}
+	
+	.websiteTitle{
+		grid-area: title;
+	}
+	
+	.websitePayOff{
+		grid-area: payoff;
+	}
+	
+	.websiteNav{
+		grid-area: nav;
+	}
+  
+	.articleGrid{
+		display: grid;
+		grid-template-areas:
+			"article5 article5"
+			"article3 article3"
+			"article2 article2"
+			"article1 article1"
+	}
+	
+	.article1{
+		background-color: #E3F7A9;
+		grid-area: article1;
+	}
+	
+	.article2{
+		background-color: #D3E7A9;
+		grid-area: article2;
+	}
+	
+	.article3{
+		background-color: #E3F7D9;
+		grid-area: article3;
+	}
+	
+	.article4{
+		display: none;
+	}
+	
+	.article5{
+		background-color: #E6E8A2;
+		grid-area: article5;
+	}
+	
+	.article6{
+		display: none;
+	}
+	
+	.asideGrid{
+		display: grid;
+		grid-template-areas:
+			"product1"
+			"product2"
+			"product3"
+	}
+	
+	.product1{
+		grid-area: product1;
+	}
+	
+	.product2{
+		grid-area: product2;
+	}
+	
+	.product3{
+		grid-area: product3;
+	}
+	
+	.footerGrid{
+		display: grid;
+		grid-template-areas:
+			"footer footer cookie"
+	}
+	
+	.cookie{
+		background-color: #FA0;
+		opacity: 50%;
+		position: fixed;
+		top: 92%;
+		left: 70%;
+		width: 500px;
+		grid-area: cookie;
+	}
+	
+	.cookie > p{
+		color: #FFF;
+	}
+	
+	.footer{
+		background-color: #E6E8A2;
+		grid-area: footer;
+	}
+}
