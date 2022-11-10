@@ -1,7 +1,7 @@
 /* PC Mode */
 @media (min-width: 1281px) {
   body {
-    background-color: red;
+    background-color: #FF0000;
   }
   
   /* Hide Hamburger Icon */
@@ -27,6 +27,10 @@
 			"footer footer cookie"
 	}
 	
+	.h2Hide{
+		display:none;
+	}
+	
 	.websiteContact{
 		grid-area: contact;
 		background-color: #DAF7A6;
@@ -38,6 +42,7 @@
 	
 	.websiteAside{
 		grid-area: aside;
+		position: static;
 	}
 	
 	.asideGrid{
@@ -73,9 +78,10 @@
 		top: 92%;
 		left: 74%;
 		width: 400px;
+		z-index: 9999;
 	}
 	
-	.websiteCookie > p{
+	.websiteCookie > h6{
 		color: #FFF;
 	}
 }
@@ -83,7 +89,7 @@
 /* Tablet Mode */
 @media (min-width: 481px) and (max-width: 1280px) {
   body {
-    background-color: green;
+    background-color: #00B500;
   }
   
   /* Hide Hamburger Icon */
@@ -109,6 +115,10 @@
 			"footer cookie"
 	}
 	
+	.h2Hide{
+		display:none;
+	}
+	
 	.websiteContact{
 		grid-area: contact;
 		background-color: #DAF7A6;
@@ -120,6 +130,7 @@
 	
 	.websiteAside{
 		grid-area: aside;
+		position: static;
 	}
 	
 	.asideGrid{
@@ -155,9 +166,10 @@
 		top: 92%;
 		left: 74%;
 		width: 400px;
+		z-index: 9999;
 	}
 	
-	.websiteCookie > p{
+	.websiteCookie > h6{
 		color: #FFF;
 	}
 }
@@ -165,7 +177,7 @@
 /* Phone Mode */
 @media (max-width: 480px) {
   body {
-    background-color: blue;
+    background-color: #00ECE8;
   }
   
   /*---- HAMBURGER MENU ----*/
@@ -222,6 +234,10 @@
 			"footer cookie"
 	}
 	
+	.h2Hide{
+		display:none;
+	}
+	
 	.websiteContact{
 		grid-area: contact;
 		background-color: #DAF7A6;
@@ -233,6 +249,7 @@
 	
 	.websiteAside{
 		grid-area: aside;
+		position: static;
 	}
 	
 	.asideGrid{
@@ -268,9 +285,10 @@
 		top: 92%;
 		left: 50%;
 		width: 400px;
+		z-index: 9999;
 	}
 	
-	.websiteCookie > p{
+	.websiteCookie > h6{
 		color: #FFF;
 	}
 }

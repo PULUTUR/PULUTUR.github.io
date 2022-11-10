@@ -1,7 +1,8 @@
 /* PC Mode */
 @media (min-width: 1281px) {
   body {
-    background-color: red;
+    background-color: #FF0000;
+	font-family: "Arial","Helvetica","sans-serif";
   }
   
   /* Hide Hamburger Icon */
@@ -18,10 +19,15 @@
 		display: inline;
 	}
 	
+	.h2Hide{
+		display:none;
+	}
+	
 	.articleGrid{
 		display: grid;
 		grid-template-areas:
 			"article2 article1 article3"
+			"article5 article1 article3"
 			"article5 article1 article4"
 			"article5 article6 article6"
 			"product1 product2 product3"
@@ -34,6 +40,7 @@
 	
 	.article2{
 		background-color: #D3E7A9;
+		letter-spacing: 2px;
 		grid-area: article2;
 	}
 	
@@ -89,9 +96,10 @@
 		left: 70%;
 		width: 500px;
 		grid-area: cookie;
+		z-index: 9999;
 	}
 	
-	.cookie > p{
+	.cookie > h6{
 		color: #FFF;
 	}
 	
@@ -104,7 +112,8 @@
 /* Tablet Mode */
 @media (min-width: 481px) and (max-width: 1280px) {
   body {
-    background-color: green;
+    background-color: #00B500;
+	font-family: "Arial","Helvetica","sans-serif";
   }
   
   /* Hide Hamburger Icon */
@@ -119,6 +128,10 @@
 	}
 	nav > ul > li{
 		display: inline;
+	}
+	
+	.h2Hide{
+		display:none;
 	}
 	
 	.articleGrid{
@@ -137,11 +150,13 @@
 	
 	.article2{
 		background-color: #D3E7A9;
+		text-indent: 50px;
 		grid-area: article2;
 	}
 	
 	.article3{
 		background-color: #E3F7D9;
+		line-height: 30px;
 		grid-area: article3;
 	}
 	
@@ -191,9 +206,10 @@
 		left: 70%;
 		width: 500px;
 		grid-area: cookie;
+		z-index: 9999;
 	}
 	
-	.cookie > p{
+	.cookie > h6{
 		color: #FFF;
 	}
 	
@@ -206,7 +222,8 @@
 /* Phone Mode */
 @media (max-width: 480px) {
   body {
-    background-color: blue;
+    background-color: #00ECE8;
+	font-family: "Arial","Helvetica","sans-serif";
   }
   
   /*---- HAMBURGER MENU ----*/
@@ -253,6 +270,10 @@
 	.websiteNav{
 		grid-area: nav;
 	}
+	
+	.h2Hide{
+		display:none;
+	}
   
 	.articleGrid{
 		display: grid;
@@ -284,6 +305,7 @@
 	
 	.article5{
 		background-color: #E6E8A2;
+		word-spacing: 5px;
 		grid-area: article5;
 	}
 	
@@ -325,9 +347,10 @@
 		left: 70%;
 		width: 500px;
 		grid-area: cookie;
+		z-index: 9999;
 	}
 	
-	.cookie > p{
+	.cookie > h6{
 		color: #FFF;
 	}
 	

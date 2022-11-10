@@ -1,7 +1,7 @@
 /* PC Mode */
 @media (min-width: 1281px) {
   body {
-    background-color: red;
+    background-color: #FF0000;
   }
   
   /* Hide Hamburger Icon */
@@ -19,7 +19,25 @@
 	}
 	
 	table, th, td{
-		border: 1px solid #000;
+		border-color: #FFAA00;
+		border-style: double;
+		border-width: 5px;
+	}
+	
+	td + td{
+		font-size: 175%;
+	}
+	
+	table col:first-child{
+		background-color: #FF0;
+	}
+	
+	h1, h2{
+		background-color: #25B900;
+	}
+	
+	header h1{
+		font-family: "Helvetica";
 	}
 	
 	.contentGrid{
@@ -29,6 +47,10 @@
 			"table table aside"
 			"table table aside"
 			"footer footer cookie"
+	}
+	
+	.h2Hide{
+		display:none;
 	}
 	
 	.websiteArticle{
@@ -73,9 +95,10 @@
 		top: 92%;
 		left: 86%;
 		width: 250px;
+		z-index: 9999;
 	}
 	
-	.websiteCookie > p{
+	.websiteCookie > h6{
 		color: #FFF;
 	}
 }
@@ -83,7 +106,7 @@
 /* Tablet Mode */
 @media (min-width: 481px) and (max-width: 1280px) {
   body {
-    background-color: green;
+    background-color: #00B500;
   }
   
   /* Hide Hamburger Icon */
@@ -101,7 +124,21 @@
 	}
 	
 	table, th, td{
-		border: 1px solid #000;
+		border-color: #FFAA00;
+		border-style: double;
+		border-width: 5px;
+	}
+	
+	td + td{
+		font-size: 175%;
+	}
+	
+	table tr:nth-child(even){
+		background-color: #CFF;
+	}
+	
+	table tr:nth-child(odd){
+		background-color: #FFF;
 	}
 	
 	.contentGrid{
@@ -111,6 +148,10 @@
 			"table table"
 			"aside aside"
 			"footer cookie"
+	}
+	
+	.h2Hide{
+		display:none;
 	}
 	
 	.websiteArticle{
@@ -154,9 +195,10 @@
 		left: 86%;
 		width: 250px;
 		grid-area: cookie;
+		z-index: 9999;
 	}
 	
-	.websiteCookie > p{
+	.websiteCookie > h6{
 		color: #FFF;
 	}
 }
@@ -164,7 +206,7 @@
 /* Phone Mode */
 @media (max-width: 480px) {
   body {
-    background-color: blue;
+    background-color: #00ECE8;
   }
   
   /*---- HAMBURGER MENU ----*/
@@ -190,7 +232,21 @@
   /*---- END HAMBURGER MENU ----*/
   
   	table, th, td{
-		border: 1px solid #000;
+		border-color: #FFAA00;
+		border-style: double;
+		border-width: 5px;
+	}
+	
+	td + td{
+		font-size: 175%;
+	}
+	
+	table tr:nth-child(even){
+		background-color: #CFF;
+	}
+	
+	table tr:nth-child(odd){
+		background-color: #FFF;
 	}
 	
 	.headerGrid{
@@ -222,6 +278,10 @@
 			"table table"
 			"aside aside"
 			"footer cookie"
+	}
+
+	.h2Hide{
+		display:none;
 	}
 	
 	.websiteArticle{
@@ -263,13 +323,14 @@
 		background-color: #FA0;
 		opacity: 50%;
 		position: fixed;
-		top: 92%;
-		left: 55%;
+		top: 95%;
+		left: 75%;
 		width: 250px;
 		grid-area: cookie;
+		z-index: 9999;
 	}
 	
-	.websiteCookie > p{
+	.websiteCookie > h6{
 		color: #FFF;
 	}
 }

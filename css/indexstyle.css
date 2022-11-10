@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
 /* PC Mode */
-@media (min-width: 1281px) {
+@media (min-width: 1281px) {  
   body {
-    background-color: red;
+    background-color: #FF0000;
   }
   
   /* Hide Hamburger Icon */
@@ -33,7 +35,7 @@
 		flex-basis: 20%;
 		flex-grow: 1;
 		flex-shrink: 0;
-		background-color: #6E6E6E;
+		background-color: #FFC72B;
 	}
 	
 	.websitePayOff{
@@ -80,16 +82,20 @@
 	#article1{
 		order: 1;
 		background-color: #00EF69;
+		font-family: 'Notable';
 	}
 	
 	#article2{
 		order: 2;
 		background-color: #00D75E;
+		text-transform: uppercase;
+		font-size: 1.2rem;
 	}
 	
 	#article3{
 		order: 3;
 		background-color: #00C054;
+		font-size: 2em;
 	}
 	
 	aside{
@@ -102,12 +108,24 @@
 		
 	}
 	
+	article > p:first-letter{
+		font-size: 200%;
+	}
+	
 	nav > ul{
 		list-style-type: none;
 		background-color: #00AEFF;
 	}
 	nav > ul > li{
 		display: inline;
+	}
+	
+	nav > ul > li > a:hover{
+		color: #EC9D00;
+	}
+	
+	nav > ul > li > a:active{
+		color: #25B900;
 	}
 	
 	.cookieStatement{
@@ -120,9 +138,10 @@
 		top: 92%;
 		left: 70%;
 		width: 100%;
+		z-index: 9999;
 	}
 	
-		.cookieStatement> p{
+		.cookieStatement > h6{
 		color: #FFF;
 	}
 }
@@ -130,7 +149,7 @@
 /* Tablet Mode */
 @media (min-width: 481px) and (max-width: 1280px) {
   body {
-    background-color: green;
+    background-color: #00B500;
   }
   
   /* Hide Hamburger Icon */
@@ -229,6 +248,10 @@
 		display: none;
 	}
 	
+	article > p:first-letter{
+		font-size: 200%;
+	}
+	
 	nav > ul{
 		list-style-type: none;
 		background-color: #00AEFF;
@@ -247,9 +270,10 @@
 		top: 92%;
 		left: 70%;
 		width: 100%;
+		z-index: 9999;
 	}
 	
-	.cookieStatement> p{
+	.cookieStatement> h6{
 		color: #FFF;
 	}
   
@@ -258,7 +282,7 @@
 /* Phone Mode */
 @media (max-width: 480px) {
   body {
-    background-color: blue;
+    background-color: #00ECE8;
   }
   
   .websiteFlexHeaderParent{
@@ -324,6 +348,10 @@
 		display: none;
 	}
 	
+	article > p:first-letter{
+		font-size: 200%;
+	}
+	
 	.footerSection{
 		flex-basis: 100%;
 		flex-grow: 1;
@@ -341,9 +369,10 @@
 		top: 93%;
 		left: 70%;
 		width: 100%;
+		z-index: 9999;
 	}
 	
-	.cookieStatement> p{
+	.cookieStatement> h6{
 		color: #FFF;
 	}
   
