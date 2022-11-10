@@ -199,6 +199,7 @@
   #hamitems{display: none;}
   
   /* Toggle show and hidden */
+  /* The ~ is similair to the + selector it will select all hamitems next to the hamnav if our input is checked.*/
   #hamnav input:checked ~ #hamitems{display:block;}
   /*---- END HAMBURGER MENU ----*/
   
