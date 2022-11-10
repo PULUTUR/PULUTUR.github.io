@@ -1,0 +1,9 @@
+Student name: Wouter Hulshof
+
+Student number: 704992
+
+Student class: INF1B
+
+URL student GitHub website: https://pulutur.github.io/
+
+URL student GitHub repository: https://github.com/PULUTUR/PULUTUR.github.io
